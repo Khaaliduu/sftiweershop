@@ -56,7 +56,7 @@ export const updateProduct = async (req, res) => {
             product.description = description
             product.price = price
            product.oldPrice = oldPrice
-           product.counInStock = counInStock
+           product.countInStock = counInStock
 
            const updatedProduct = await product.save()
            if (updatedProduct) {
